@@ -9,4 +9,3 @@ COPY renv renv
 USER root
 RUN R -e "install.packages('renv', repos='https://cloud.r-project.org')"
 RUN R -e "renv::restore()"
-
